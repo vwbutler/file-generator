@@ -1,8 +1,7 @@
 // Packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
-const generateMarkDown = require("./utils/generateMarkdown");
-const { start } = require("repl");
+const generateMarkDown = require("./utils/generateMarkdown.js");
 
 // A function to initialize app
 function init() {
@@ -30,7 +29,7 @@ function init() {
         message: "Provide usage details.",
       },
       {
-        type: "checkbox",
+        type: "list",
         name: "license",
         message: "Select a license.",
         choices: ["mit", "isc", "gnuplv3"],
@@ -67,37 +66,9 @@ function init() {
       },
     ])
     .then((answers) => {
-      const readme = `
-# Project: ${answers.title}
+      const readme = generateMarkDown(answers);
 
-## Description:
-${answers.description}
-
-## Table of Contents:
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
-- [Contributing](#contributing)
-- [Tests](#tests)
-- [Questions](#questions)
-
-## Installation:
-${answers.installation}
-## Usage:
-${answers.usage}
-## License:
-${answers.license}
-## Contributing:
-${answers.contributing}
-## Tests:
-${answers.tests}
-## Questions:
-If you need help or have questions, contact ${answers.firstName} ${answers.lastName}.  
-**Github**: [${answers.githubName}](https://github.com/${answers.githubName})  
-**Email**: ${answers.email}  
-`;
       // TODO: Create a function to write README file
-
       fs.writeFile("README.md", readme, (err) => {
         if (err) throw err;
         console.log("All done!");
