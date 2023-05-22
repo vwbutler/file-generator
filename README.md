@@ -1,8 +1,14 @@
 
-  # Project: JiveBot
+  # Project: File Generator for README
 
   ## Description:
-  JiveBot is a groovy imaginary app designed to inject a touch of fun and entertainment into your day-to-day interactions. It's a chatbot with a unique twist - it responds to your messages with groovy phrases, funky GIFs, and hilarious one-liners. Whether you're feeling down or simply want to spice up your conversations, JiveBot has got your back!
+  A command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package.
+
+  The image below shows the command line user experience.
+  ![user exerience](/assets/images/command_line_prompts.png)
+
+  The image below displays how the README output file appears in preview.
+  ![read me output](/assets/images/readme_example.png)
 
   ## Table of Contents:
   - [Installation](#installation)
@@ -13,19 +19,19 @@
   - [Questions](#questions)
 
   ## Installation:
-  Clone to your local machine, navigate to the project directory, install the required dependencies and start
+  Use the command line to invoke the application.
   
   ## Usage:
-  Once the JiveBot app is running, open your preferred messaging platform (e.g., Slack, Discord, or any other messaging app that allows chatbot integrations).
+  This application may be used to generate a professional README.md file.
   
   ## License:
   ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
   
   ## Contributing:
-  Enjoy the JiveBot experience and spread the groove! JiveBot is an open-source project, and we welcome contributions from developers around the world.  
+  I used all of the bootcamp resources to create this application (tutors, learning assistance and classwork.)
   
   ## Tests:
-  JiveBot includes a comprehensive suite of tests to ensure the app's functionality remains consistent. To run the tests, follow these steps: 1). Make sure you have the project dependencies installed (as mentioned in the Installation section). 2). Run the test command. 3). The test suite will execute, and you will receive detailed feedback on the app's performance and behavior. 4). Feel free to modify and add additional tests as needed to improve the JiveBot application.\
+  invoke the application and run through the questions. View the README.md file to see the end product.
   
   ## Questions:
   If you need help or have questions, contact Virginia Butler.  

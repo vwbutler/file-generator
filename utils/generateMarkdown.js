@@ -2,13 +2,13 @@
 // If there is no license, return an empty string
 
 function renderLicenseBadge(license) {
-  let licensezz = "";
+  let licenses = "";
   if (license === "mit") {
-    licensezz = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`;
+    licenses = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`;
   } else if (license === "isc") {
-    licensezz = `![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)`;
+    licenses = `![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)`;
   }
-  return licensezz;
+  return licenses;
 }
 
 function generateMarkDown(answers) {
